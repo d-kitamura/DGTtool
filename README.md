@@ -12,6 +12,10 @@ The following features of DGTtool might be different from the other tools:
  8. Phase visualization tool (plotPhase) is implemented.
  9. STFT/DGT can be written in an operator form.
 
+[![View DGTtool on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://jp.mathworks.com/matlabcentral/fileexchange/94610-dgttool)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5010751.svg)](https://doi.org/10.5281/zenodo.5010751)
+
+
 
 # How to Use
 Download **DGTtool.m** and place it in the **Current Folder**.
@@ -42,6 +46,8 @@ F.plot(x,fs)
 F.plotPhase(x,fs)
 F.plotReassign(x,fs)
 ```
+
+
 
 # Documentation
 To check all functions in DGTtool, please read and run **demo.m**.
