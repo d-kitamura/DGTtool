@@ -891,6 +891,7 @@ classdef DGTtool < handle
             %   See also getWindow, DGTtool, DGTtool/DGTtool
             
             winList = {
+                'ForKitamuraHamming'
                 'Hann'
                 'Blackman'
                 '3termC1Nuttall'
@@ -947,9 +948,11 @@ classdef DGTtool < handle
             isodd = mod(windowLength,2); % 1 (if odd) or 0 (if even)
             K = windowLength + isodd;    % always even
             
-            if ismember(winName,winList(1:7)) % cosine window case
+            if ismember(winName,winList(1:8)) % cosine window case
                 
                 switch winName
+                    case 'ForKitamuraHamming'
+                        c = [25; 21]./46;
                     case 'Hann'
                         c = [0.5; 0.5];
                     case 'Blackman'
